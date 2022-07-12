@@ -9,7 +9,7 @@ Library             Collections
 
 *** Tasks ***
 Scrape Patronite
-    Remove Old CSV
+    #Remove Old CSV
     Starting a browser with a page    https://patronite.pl/
     Accept GDPR
     Open Category From List
@@ -41,7 +41,7 @@ Get Members Value
 
 Open Category From List
     ${category_link_list}=    Get Category List
-    FOR    ${index}    ${category}    IN ENUMERATE    @{category_link_list}
+    FOR    ${index}    ${category}    IN ENUMERATE    @{category_link_list}[26:]
         Log To Console    ${index}    ${category}
         Go To    ${category}
         Pagginate
