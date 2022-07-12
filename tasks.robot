@@ -41,7 +41,7 @@ Get Members Value
 
 Open Category From List
     ${category_link_list}=    Get Category List
-    FOR    ${index}    ${category}    IN ENUMERATE    @{category_link_list}[26:]
+    FOR    ${index}    ${category}    IN ENUMERATE    @{category_link_list}
         Log To Console    ${index}    ${category}
         Go To    ${category}
         Pagginate
